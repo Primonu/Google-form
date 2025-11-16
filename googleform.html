@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>googleform</title>
+    <style>
+        body{
+            background-color: rgb(236, 236, 248);
+        }
+        .section{
+            width:100%;
+        }
+        .form{
+            width:50%;padding:10px;margin:auto;
+        }
+        .heading{
+            padding-left: 15px;padding-bottom: 15px;margin:15px;background-color: #fff;
+            border:1px solid gainsboro;border-radius: 15px;box-sizing: border-box;box-shadow: 10px;border-top: 8px solid blueviolet;
+        }
+        .border{
+            border:1px solid gainsboro;border-radius: 15px;box-sizing: border-box;box-shadow: 10px;box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+        .heading span{
+            color:red;
+        }
+        .data{
+           padding:25px 20px;margin:15px;background-color: #fff;
+        }
+        .data label{
+            font-size: 16px;
+        }
+        .data label span{
+            color:red;
+        }
+        .input{
+            border:none;border-bottom: 1px solid gainsboro;width:50%;margin-top: 10px;padding:10px;font-size: 16px;
+        }
+        .complete{
+           display:flex; justify-content: space-between;padding:15px;margin:15px;
+        }
+        .button button{
+            padding:10px 20px;border-radius: 10px;border: none;background-color: blueviolet;color: #fff;font-size: 15px;
+        }
+        .clear p{
+            color:blueviolet;margin:0;
+        }
+        .mainfooter{
+            text-align: center;
+        }
+        .footer{
+            padding:15px;
+        }
+    </style>
+</head>
+<body>
+    <section class="section">
+        <div class="form">
+            <form>
+                <div class="heading">
+                    <h1>TALWAR SERVICE</h1>
+                    <p>SERVICE REQUEST</p>
+                    <hr style="border:1px solid gainsboro;">
+                    <span>*Required</span>
+                </div>
+                <div class="data border">
+                    <label>NAME<span>*</span></label><br><br>
+                    <input class="input" type="text"placeholder="Your answer"required>
+                </div>
+                <div class="data border">
+                    <label>MOBILE NUMBER<span>*</span></label><br><br>
+                    <input class="input" type="number"placeholder="Your answer"required>
+                </div>
+                <div class="data border">
+                    <label>ALTERNATE NUMBER<span>*</span></label><br><br>
+                    <input class="input" type="text"placeholder="Your answer"required>
+                </div>
+                <div class="data border">
+                    <label>VECHICLE NUMBER<span>*</span></label><br><br>
+                    <input class="input" type="text"placeholder="Your answer"required>
+                </div>
+                <div class="data border">
+                    <label>VECHICLE MODEL(SANTRO/110 ETC)<span>*</span></label><br><br>
+                    <input class="input" type="text"placeholder="Your answer"required>
+                </div>
+                <div class="data border">
+                    <label>APPOINMENT DATE<span>*</span></label><br><br>
+                    <input class="input" type="date"placeholder="dd-mm-yyyy"required>
+                </div>
+                <div class="data border">
+                    <label>PICKUP/APPOINTMENT<span>*</span></label><br><br>
+                    <input type="radio" name="pickup" required>
+                    <label>NEED PICK-UP</label><br><br>
+                    <input type="radio" name="pickup" required>
+                    <label>NEED APPOINMENT</label><br><br>
+                    <input type="radio" name="pickup" required>
+                    <label>NEED TO SEND BREAK-DOWN</label>
+                </div>
+                <div class="data border">
+                    <label>WORKSHOP LOCATION<span>*</span></label><br><br>
+                    <input type="radio" name="work" required>
+                    <label>TADBUND</label><br><br>
+                    <input type="radio" name="work" required>
+                    <label>TIRUMALGIRI-KANAJIGUDA</label>
+                </div>
+                <div class="data border">
+                    <label>ADDRESS FOR PICKUP<span>*</span></label><br><br>
+                    <input class="input" type="text" placeholder="Your answer"required>
+                </div>
+                <div class="data border">
+                    <label>LAND MARK<span>*</span></label><br><br>
+                    <input class="input" type="text" placeholder="Your answer"required>
+                </div>
+                <div class="data border">
+                    <label>REMARKS/INSTRUCTIONS<span>*</span></label><br><br>
+                    <input class="input" type="text" placeholder="Your answer"required>
+                </div>
+                <div class="complete">
+                    <div class="button">
+                        <button type="submit">Submit</button>
+                    </div>
+                    <div class="clear">
+                        <p>Clear form</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="mainfooter">
+        <div class="footer">
+            <p style="font-size: 22px;"><strong>Google </strong>Forms</p>
+        </div>
+    </footer>
+</body>
+</html>
